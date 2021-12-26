@@ -56,6 +56,7 @@
                 echo "<br/>";
 
                 // Increment/Decrement operators (post-increment)
+                // i++ is a post increament, it print value older then keep new value for printing next
 
                 $y = 10;
                 echo $y++; // purba increament hoba na , pora hoba// tai print korba 10
