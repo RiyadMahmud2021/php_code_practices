@@ -95,27 +95,28 @@
                     echo "<br/>"; 
 
 
-                    // Multidimensional array Row Collumn
+                    // // Multidimensional array Row Collumn
 
 
-                    $cars = array(
+                    $cars1 = array(
                         array(" BMW " , 15 ,"X1 Sports Activity Vehicle" ),
                         array(" Volve ", 20, "SUV XC40/XC60/XC90"),
-                        array("TATA", 25, 30), // give comma here not semi colon
+                        array("TATA", 25, "T-30"), // give comma here not semi colon
+                        array("Audi", 25, "A-30"),
                     );
-                                 
-                    for($row = 0; $row <3; $row++){
-                        echo "<p> Row Number $row </p>";
+                                  
+                    for($row = 0; $row < 4; $row++){ // $row for controlling row 
+                        $j = $row + 1; //see the logic.........
+                                    // I am increamenting here extra 1 with row value
+                                    // for maintaining serial number with used array
+                        echo "<p> Row Number $j</p>";
 
                         echo "<ul>";
-                        for($col = 0; $col < 3; $col++ ){
-                            echo "<li> 
-                            ".$cars."
-                                  </li>"
+                        for($col = 0; $col < 3; $col++ ){ // $col for controlling collumn
+                            echo "<li>".$cars1[$row][$col]."</li>";
                         }
                         echo "</ul>";
-                    }
-         
+                    }      
                 ?>
             </section> 
 
