@@ -34,7 +34,7 @@
                 $errwebsite = "<span style='color:red' > Website Field is Required. </span>";
             }
             elseif(!filter_var($_POST["website"], FILTER_VALIDATE_URL)){
-                $errwebsite = "<span style='color:red'> Invalid E-mail Formet. </span>";
+                $errwebsite = "<span style='color:red'> Invalid Website Formet. </span>";
             }
             else{
                 $website = validation($_POST["website"]); // valaidation() is a input cleaning function 
