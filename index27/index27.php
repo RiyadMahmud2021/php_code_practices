@@ -51,7 +51,7 @@ or your URL.> $_POST retrieves variables from a POST method, such as (generally)
             </section> 
 
             <section class="footerOption">
-                <h2>BMIT Solution</h2>
+            <h2>BMIT Solution Ltd.</h2>
             </section> 
         </div>  
     </body>

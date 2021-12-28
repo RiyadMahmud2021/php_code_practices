@@ -1,5 +1,21 @@
 <!-- PHP Fundamentals ( Super Global Variable $_REQUEST & $_POST) -->
 <!-- Detail HTTP All methods(GET, POST, PUT, HEAD, DELETE, PATCH, OPTIONS) for PHP: https://www.w3schools.com/tags/ref_httpmethods.asp -->
+<!-- What is difference between $_ POST and $_ request? 
+     Ans: 
+     https://stackoverflow.com/questions/42942559/whats-the-difference-between-post-get-and-request
+
+    // POST: It is a method in which data gets sent using packet which is not visible to 
+                any user on web-browser. It is secured compared to GET method.
+
+    // GET: It is a method in which data gets sent with URL which is visible to user in address-bar of any web-browser. 
+            So, it’s not secure as POST method.
+            Now, There are total three super global variables to catch this data in PHP.
+
+    // $_POST: It can catch the data which is sent using POST method.
+    // $_GET:  It can catch the data which is sent using GET method.
+    // $_REQUEST: It can catch the data which is sent using both POST & GET methods.
+                Also with $_GET superglobal variable can collect data sent in the URL from submit button.
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +26,8 @@
         <!-- <link href="css/style.css" rel="stylesheet"> -->
 
         <style>
-            .phpcoding{ width: 900px; 
+            .phpcoding{ 
+                width: 900px; 
                 margin: 0 auto; 
                 background: #EAE5E4; 
                 padding: 10px;
@@ -58,7 +75,7 @@
                     
 
 
-           <!-- 2. method="POST" -->
+            <!-- 2. method="POST" -->
 
                     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
                          <!--  
@@ -74,7 +91,7 @@
 
 
 
-           <!-- 3. Global $_REQUEST with method="POST" and request handeling-->
+            <!-- 3. Global $_REQUEST with method="POST" and request handeling-->
 
                     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
                          <!--  
@@ -129,7 +146,7 @@
             </section> 
 
             <section class="footerOption">
-                <h2>BMIT Solution</h2>
+                <h2>BMIT Solution Ltd.</h2>
             </section> 
         </div>  
     </body>

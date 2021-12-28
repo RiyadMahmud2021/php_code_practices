@@ -67,22 +67,22 @@ A variable's scope is defined by where the variable is initialized or created.
 
                     //  Super Globals Variable: $_SERVER 
 
-                        echo $_SERVER['PHP_SELF']; // working file location... 
+                        echo $_SERVER['PHP_SELF']; // show working/current file location... 
                         echo "<br/>";
-                        echo $_SERVER['SERVER_NAME']; // site name 
+                        echo $_SERVER['SERVER_NAME']; // show site name 
                         echo "<br/>";
-                        echo $_SERVER['SCRIPT_NAME']; // full path name
+                        echo $_SERVER['SCRIPT_NAME']; // show full path name
                         echo "<br/>";
-                        echo $_SERVER['HTTP_USER_AGENT']; // browser supprt name
+                        echo $_SERVER['HTTP_USER_AGENT']; // show browser supprt name
                         echo "<br/>";
-                        echo $_SERVER['SERVER_ADDR']; // IP address
+                        echo $_SERVER['SERVER_ADDR']; // show IP address
                 
 
                 ?>
             </section> 
 
             <section class="footerOption">
-                <h2>BMIT Solution</h2>
+                <h2>BMIT Solution Ltd.</h2>
             </section> 
         </div>  
     </body>

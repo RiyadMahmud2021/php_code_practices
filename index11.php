@@ -139,7 +139,7 @@
 
             <hr/>
             <section class="footerOption">
-                <h2>BMIT Solution</h2>
+                <h2>BMIT Solution Ltd.</h2>
             </section> 
         </div>  
     </body>
