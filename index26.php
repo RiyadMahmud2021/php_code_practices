@@ -91,7 +91,7 @@
 
 
 
-            <!-- 3. Global $_REQUEST with method="POST" and request handeling-->
+            <!-- 3. Global $_REQUEST with method="POST" and request handling-->
 
                     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
                          <!--  
@@ -132,7 +132,13 @@
                     </form>
                     <?php
                         if($_SERVER["REQUEST_METHOD"] == "POST"){ 
-                            $name = $_POST['username1']; // $_REQUEST['username']     Keeping in A separate variable. // Here username is the field name.
+                            $name = $_POST['username1']; // If request method is "post" then the input value is keeping in a separate variable called "$name" with the help of "$_POST['username1'"].
+                                                         // Here "username1" is the field  "identification name". On "$_POST[]" , we will select specific field name of form. 
+                                                         // After generating input from the "form input field" , "post" method helps to pass the input. "post" didn't generate input but helps to pass data.
+                                                         // $_POST['username1'] catch the passing input of "post" method and put into the "$name" variable.
+                                                         // Form field name "username1" in $_POST['username1'] identifies specific form field identification name 
+                                                         // and that helps to access specific field massage whitch must be sent by "post" method.
+                                                         
                             if (empty($name)){
                                 echo "<span style='color:red'>Username field must not be empty!!!</span>";
                             }
