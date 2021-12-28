@@ -135,7 +135,7 @@
                             $name = $_POST['username1']; // If request method is "post" then the input value is keeping in a separate variable called "$name" with the help of "$_POST['username1'"].
                                                          // Here "username1" is the field  "identification name". On "$_POST[]" , we will select specific field name of form. 
                                                          // After generating input from the "form input field" , "post" method helps to pass the input. "post" didn't generate input but helps to pass data.
-                                                         // $_POST['username1'] catch the passing input of "post" method and put into the "$name" variable.
+                                                         // $_POST[' '] catch the passing input of "post" method and put into the "$name" variable.
                                                          // Form field name "username1" in $_POST['username1'] identifies specific form field identification name 
                                                          // and that helps to access specific field massage whitch must be sent by "post" method.
                                                          
